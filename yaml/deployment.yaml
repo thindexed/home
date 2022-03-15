@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: home
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - env:
+        image: <image-name>
+        imagePullPolicy: Always
+        name: home
+        ports:
+        - containerPort: 80
