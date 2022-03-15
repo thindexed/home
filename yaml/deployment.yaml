@@ -1,15 +1,17 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: home
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      name: home
   template:
+    metadata:
+      labels:
+        name: home
     spec:
       containers:
-      - env:
-        image: <image-name>
-        imagePullPolicy: Always
-        name: home
-        ports:
-        - containerPort: 80
+      - name: home
+        image: docker.io/freegroup/thindexed-home:0.1.0-1
