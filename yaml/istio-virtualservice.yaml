@@ -3,7 +3,7 @@ kind: VirtualService
 metadata:
   name: home
 spec:
-  hosts: ["app.thindexed.personal.shoot.canary.k8s-hana.ondemand.com"]
+  hosts: ["app.<DOMAIN>"]
   gateways: [ "gateway-app" ]
   http:
     - match:
