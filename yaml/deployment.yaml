@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: home
-        image: docker.io/freegroup/thindexed-home:0.1.0-1
+        image: docker.io/freegroup/thindexed-home:0.1.0-18
