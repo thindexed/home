@@ -1,4 +1,6 @@
 secrets
+configuration
+src/common
 
 # Logs
 logs
