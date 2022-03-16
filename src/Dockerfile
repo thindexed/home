@@ -1,3 +1,3 @@
 FROM nginx
 EXPOSE 80
-COPY ./home/ /usr/share/nginx/html
+COPY ./web/ /usr/share/nginx/html
