@@ -8,6 +8,6 @@ fi
 
 echo "Using Domain: $DOMAIN"
 
-cat ./yaml/deployment.yaml | sed "s~<DOMAIN>~$(DOMAIN)~g" | kubectl apply -f -
-cat ./yaml/istio-virtualservice.yaml | sed "s~<DOMAIN>~$(DOMAIN)~g" | kubectl apply -f -
-cat ./yaml/service.yaml | sed "s~<DOMAIN>~$(DOMAIN)~g" | kubectl apply -f -
+cat ./yaml/deployment.yaml | sed "s~<DOMAIN>~$DOMAIN~g" | kubectl apply -f -
+cat ./yaml/istio-virtualservice.yaml | sed "s~<DOMAIN>~$DOMAIN~g" | kubectl apply -f -
+cat ./yaml/service.yaml | sed "s~<DOMAIN>~$DOMAIN~g" | kubectl apply -f -
