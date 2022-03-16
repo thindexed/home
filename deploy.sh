@@ -6,7 +6,7 @@ if [ -f ./configuration/settings.ini ]; then
 fi
 
 
-echo $DOMAIN
+echo "Using Domain: $DOMAIN"
 
 cat ./yaml/deployment.yaml | sed "s~<DOMAIN>~$(DOMAIN)~g" | kubectl apply -f -
 cat ./yaml/istio-virtualservice.yaml | sed "s~<DOMAIN>~$(DOMAIN)~g" | kubectl apply -f -
