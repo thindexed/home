@@ -1,6 +1,3 @@
 [submodule "configuration"]
 	path = configuration
 	url = https://github.com/thindexed/configuration.git
-[submodule "src/common"]
-	path = src/common
-	url = https://github.com/thindexed/common.git
