@@ -10,6 +10,11 @@ spec:
   http:
     - match:
       - uri:
+          regex: "/+"
+      redirect:
+        uri: "/home/"
+    - match:
+      - uri:
           exact: "/home"
       redirect:
         uri: "/home/"
